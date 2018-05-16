@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+   /*  background-image: url("stars-north-pole.png");
+    background-repeat: repeat; */
+    position: relative;
+}
+
+p {
+    color: gold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+h1 {
+    color: white;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;  
+/*     background-color: black; */
+    padding-bottom: 4rem;
+    
+}
+
+#icon-bar {
+    list-style-type: none;
+    padding: 0;
+}
+
+#movie-info {
+    font-size: 12px;
+}
+
+#info-bar {
+    font-size: 11px;
+    
+}
+
+#trailer-box {
+    padding: 15px;
+    float: bottom;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: pink;
+}
+
+#footer {
+    position: relative;
+    bottom:0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* background-color: rgb(27, 27, 27); */
+    text-align: center;
+}
+
+#footer p{
+    font-size: 11px;
+}
+
+#header img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
