@@ -1,8 +1,15 @@
+/* * {
+    margin: 0;
+} */
+
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: black;
-   /*  background-image: url("stars-north-pole.png");
-    background-repeat: repeat; */
-    position: relative;
+    background-image: url("images/star-sky-background.jpg"); 
+    background-repeat: repeat;
 }
 
 p {
@@ -10,58 +17,60 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-h1 {
-    color: white;
-}
-
-.content {
+.page-wrap {
+    min-height: 100%;
+    margin-bottom: -20px;  
     margin-left: auto;
     margin-right: auto;
     width: 70%;  
-/*     background-color: black; */
-    padding-bottom: 4rem;
-    
+}
+.page-wrap:after {
+    display: block;
 }
 
-#icon-bar {
-    list-style-type: none;
-    padding: 0;
+.content {
+    background-color: black;
+    text-align: center;
 }
 
-#movie-info {
-    font-size: 12px;
-}
-
-#info-bar {
-    font-size: 11px;
-    
+#header img, .content{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 #trailer-box {
     padding: 15px;
     float: bottom;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    background-color: pink;
+    text-align: center;
 }
 
+#solo-trailer {
+    width: 560px;
+    height: 315px;
+    float: middle;
+}
+
+#info-bar, #footer p {
+    font-size: 11px;
+}
+
+#important-links p, #movie-info{
+    font-size: 12px
+}
+
+#icon-bar {
+    padding: 0;
+}
+
+#footer, .page-wrap:after {
+    height: 20px;
+}
 #footer {
     position: relative;
     bottom:0;
     width: 100%;
-    padding: 0;
-    margin: 0;
-    /* background-color: rgb(27, 27, 27); */
     text-align: center;
 }
 
-#footer p{
-    font-size: 11px;
-}
 
-#header img{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
