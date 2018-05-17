@@ -1,13 +1,14 @@
-/* * {
+* {
     margin: 0;
-} */
+}
+
 
 html, body {
     height: 100%;
 }
 
 body {
-    background-color: black;
+
     background-image: url("images/star-sky-background.jpg"); 
     background-repeat: repeat;
 }
@@ -19,10 +20,11 @@ p {
 
 .page-wrap {
     min-height: 100%;
+    /* footer height minus last tag padding-bottom*/
     margin-bottom: -20px;  
     margin-left: auto;
     margin-right: auto;
-    width: 70%;  
+    width: 70%; 
 }
 .page-wrap:after {
     display: block;
@@ -31,6 +33,10 @@ p {
 .content {
     background-color: black;
     text-align: center;
+}
+
+#header img{
+    width: 45%;
 }
 
 #header img, .content{
@@ -46,13 +52,20 @@ p {
 }
 
 #solo-trailer {
-    width: 560px;
-    height: 315px;
+    width: 50%;
+    height: 350px;
     float: middle;
 }
 
 #info-bar, #footer p {
     font-size: 11px;
+}
+
+#important-links img{
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 26px;
+    padding-bottom: 20px;
 }
 
 #important-links p, #movie-info{
