@@ -66,6 +66,7 @@ body {
 
 #content {
     flex: 1 0 auto;
+    /* 683516 other background color*/
     background-color: #E0C6A1;
     word-wrap: break-word;
 }
