@@ -1,11 +1,37 @@
 
-body, #content {
+body, .content {
     min-width: 500px;
 }
 
-#content {
+.content {
     display: flex;
     flex-direction: row;
+}
+
+.add-to-shoppingcart {
+    display: flex;
+    flex-direction: row;
+}
+
+.add-to-shoppingcart input {
+    width: 50px;
+}
+
+.add-to-shoppingcart button {
+    color: #3c2a1e;
+    background-color: #a27250;
+    cursor: pointer;
+}
+
+.add-to-shoppingcart button:hover {
+    background-color: #6f4e37;
+}
+
+.add-to-shoppingcart input, button {
+    padding: 10px 15px;
+    margin: 2px;
+    border-radius: 4px;
+    border: none;
 }
 
 .item-navigation {
@@ -40,6 +66,7 @@ body, #content {
 
 .product-item-info {
     word-wrap: break-word;
+    padding: 5px;
 }
 
 .product-item-col {

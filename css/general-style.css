@@ -22,7 +22,7 @@ body {
     text-align: center;
 }
 
-#navbar-items, #content, #footer{
+#navbar-items, .content, #footer{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -65,7 +65,7 @@ body {
     color: #a27250;
 }
 
-#content {
+.content {
     flex: 1 0 auto;
     /* 683516 other background color*/
     background-color: #E0C6A1;
