@@ -33,12 +33,12 @@ body {
     background-color: #a27250; 
 }
 
+
 #navbar-items{  
     flex-direction: row;
     flex-flow: row wrap;
     display: flex;
     justify-content: flex-start;  
-
 }
 
 #navbar-items a{
