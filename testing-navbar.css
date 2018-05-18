@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url("coffee-background.jpg");
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#header {
+    font-size: 28pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #3c2a1e ;
+    color: #a27250; 
+}
+
+#navbar-items, #content, #footer{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar {
+    width: 100%;
+    background-color: #a27250; 
+}
+
+#navbar-items{  
+    flex-direction: row;
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: flex-start;  
+
+}
+
+#navbar-items a{
+    text-decoration: none;
+    text-align: center;
+    width: 110px;
+    display: block;
+    padding: 15px;
+    margin-right: 2px;
+    white-space: nowrap;
+    border-bottom: 1px solid #3c2a1e;
+    color: #3c2a1e;
+}
+
+#navbar-items a:hover:not(.active-page){
+    background-color: #6f4e37;
+    padding-bottom: 11px;
+    border-bottom: 5px solid #3c2a1e;
+
+}
+
+#navbar-items a.active-page{
+    background-color: #3c2a1e;
+    color: #a27250;
+}
+
+#content {
+    flex: 1 0 auto;
+    background-color: #a27250;
+    word-wrap: break-word;
+}
+
+#footer {
+    flex-shrink: 0;
+    height: 30px;
+    background-color: #6f4e37;
+}
+
