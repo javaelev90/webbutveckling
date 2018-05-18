@@ -1,0 +1,13 @@
+body {
+    min-width: 500px;    
+}
+
+h2 {
+    text-align: center;
+}
+
+h2, p {
+    margin-left: 5px;
+    margin-right: 5px;
+    word-wrap: break-word;
+}

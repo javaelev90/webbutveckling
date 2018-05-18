@@ -4,10 +4,11 @@
 
 html, body {
     height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
-    background-image: url("coffee-background.jpg");
+    background-image: url("../resources/images/coffee-background.jpg");
     background-repeat: repeat;
     display: flex;
     flex-direction: column;
@@ -16,9 +17,9 @@ body {
 
 #header {
     font-size: 28pt;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #3c2a1e ;
     color: #a27250; 
+    text-align: center;
 }
 
 #navbar-items, #content, #footer{
@@ -68,12 +69,15 @@ body {
     flex: 1 0 auto;
     /* 683516 other background color*/
     background-color: #E0C6A1;
-    word-wrap: break-word;
 }
 
 #footer {
+    display: flex;
     flex-shrink: 0;
     height: 30px;
     background-color: #6f4e37;
+    font-size: 11pt;
+    align-items: center;
+    justify-content: center;
 }
 
