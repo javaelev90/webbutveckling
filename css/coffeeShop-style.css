@@ -1,8 +1,4 @@
 
-body, .content {
-    min-width: 500px;
-}
-
 .content {
     display: flex;
     flex-direction: row;
@@ -40,6 +36,12 @@ body, .content {
     padding-left: 10px;
     border-left: 1px solid black;
     word-wrap: break-word;
+
+}
+
+.item-navigation h2, .item-navigation li a {
+    color: #3c2a1e;
+    text-decoration: none;
 }
 
 .item-navigation ul {
