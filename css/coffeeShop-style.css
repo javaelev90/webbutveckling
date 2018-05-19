@@ -1,7 +1,12 @@
 
 .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
+}
+
+.product-item-list{
+    display: flex;
+    flex-direction: column;
 }
 
 .add-to-shoppingcart {
