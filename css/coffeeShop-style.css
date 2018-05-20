@@ -37,21 +37,49 @@
 
 .item-navigation {
     min-width: 200px;
+    height: 100%;
     padding-right: 10px;
     padding-left: 10px;
-    border-left: 1px solid black;
+    border-left: 1px solid #3c2a1e;
     word-wrap: break-word;
-
 }
 
 .item-navigation h2, .item-navigation li a {
     color: #3c2a1e;
     text-decoration: none;
+    position: relative;
 }
 
 .item-navigation ul {
     list-style: none;
 }
+
+.item-navigation li a:before{
+    
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: #3c2a1e;
+    visibility: hidden;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: all 0.2s linear 0s;
+}
+
+.item-navigation li a:focus:before,
+.item-navigation li a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.item-navigation li a{
+    font-size: 14pt; 
+}
+
+
 
 .product-item{
     display: flex;

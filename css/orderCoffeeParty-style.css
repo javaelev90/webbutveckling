@@ -26,6 +26,7 @@ form input:not([type=submit]), textarea {
 
 form textarea {
     height: 150px;
+    resize: none;
 }
 
 
@@ -40,5 +41,4 @@ form input[type=submit] {
     border: none;
     cursor: pointer;
     padding: 10px 15px;
-    box-shadow: 0 5px #999;
 } 
