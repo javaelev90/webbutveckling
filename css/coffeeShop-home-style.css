@@ -17,8 +17,7 @@
 }
 
 .item:hover{
-    border: 3px solid #6f4e37;
-    padding: 3px;
+    transform: scale(1.05);
 }
 
 .item {
@@ -30,7 +29,7 @@
     padding: 5px;
     border: 1px solid #3c2a1e;
     background-color: white;   
-    
+    transition: all 0.2s ease-in-out;
 }
 
 .item img {
