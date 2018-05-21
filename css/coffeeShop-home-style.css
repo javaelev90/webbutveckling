@@ -19,14 +19,17 @@
     padding: 5px;
 }
 
+
+
 .item-info-popup {
     display: none;
+    position: relative;
     background-color: pink;
     
 }
 
 .item-info:hover + .item-info-popup {
-    position: relative;
+    
     display: block;
     z-index: 200;
 }
@@ -45,7 +48,6 @@
 } */
 
 .item {
-    overflow: hidden;
     /* flex-direction: column;
     display: table-cell; */
     display: flex;
