@@ -1,19 +1,24 @@
-body {
-    min-width: 500px;    
-}
 
-.content h2 {
-    margin-top: 15px;
-}
+.welcome-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-.content img {
+}
+.welcome-container img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
-p {
+.welcome-container h2{
+    margin-top: 15px;
+}
+
+.welcome-container p{
     margin-left: 5px;
     margin-right: 5px;
     word-wrap: break-word;
