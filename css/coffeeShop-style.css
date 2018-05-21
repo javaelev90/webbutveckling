@@ -4,20 +4,9 @@
     flex-direction: row;  
 }
 
-<<<<<<< HEAD
-/* .content {
-    display: flex;
-    flex-direction: row;
-} */
-
-.product-item-list {
-    display: flex;
-    flex-direction: column; 
-=======
 .product-item-list{
     display: flex;
     flex-direction: column;
->>>>>>> 4f03e62d770f130304be57a78ac3ebad10c0d1ef
 }
 
 .add-to-shoppingcart {
