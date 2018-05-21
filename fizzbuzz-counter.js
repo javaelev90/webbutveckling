@@ -1,9 +1,20 @@
 
-function fizzbuzz(startnum, endnum, fizznum, buzznum){
-    var output = document.getElementById("text-output-area");
-    output.innerHTML="";
-    for(var i = startnum; i <= endnum; i++){
+function fizzbuzz(startnum,endnum,fizznum,buzznum){
 
+    
+    if(isNaN(startnum) || isNaN(endnum) || isNaN(fizznum) || isNaN(buzznum)){
+        alert("You can only input numbers");
+        return;
+    }
+
+    var output = document.getElementById("fizzbuzz-output-area");
+    output.innerHTML="";
+    startnum = Number.parseInt(startnum);
+    endnum = Number.parseInt(endnum);
+    fizznum = Number.parseInt(fizznum);
+    buzznum = Number.parseInt(buzznum);
+
+    for(var i = startnum; i <= endnum; i++){
         var word = i;
         if(i % fizznum === 0){
             word = "Fizz";
@@ -14,7 +25,6 @@ function fizzbuzz(startnum, endnum, fizznum, buzznum){
         if(i % fizznum === 0 && i % buzznum === 0){
             word = "FizzBuzz";
         }
-        console.log(word+" ");
         output.innerHTML += word+" ";
     }
 }

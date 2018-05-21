@@ -2,35 +2,38 @@
 
     <head>
         <script type="text/javascript" src="fizzbuzz-counter.js"></script>
+        <link type="text/css" rel="stylesheet" href="index-style.css"/>
     </head>
     <body>
-        <header id="header"><h1>FizzBuzz generator</h1></header>
+        <header id="header"><div id="fizz">Fizz</div><div id="buzz">Buzz</div>generator</header>
         <div id="content">
-            <div class="content-column">
-                <form id="fizzbuzz-form" action="javascript:void(0)">
-                    <label for="startnum">Start number:</label>
-                    <input type="number" id="startnum" name="startnum"/>
-                    <label for="endnum">End number:</label>
-                    <input type="number" id="endnum" name="endnum"/>
-                    <label for="fizznum">Number to divide by for Fizz:</label>
-                    <input type="number" id="fizznum" name="fizznum"/>
-                    <label for="buzznum">Number to divide by for Buzz:</label>
-                    <input type="number" id="buzznum" name="buzznum"/>
-                    <input type="submit" value="Calculate" onclick="fizzbuzz(
-                        document.getElementById('startnum').value,
-                        document.getElementById('endnum').value,
-                        document.getElementById('fizznum').value,
-                        document.getElementById('buzznum').value
-                    );"/>
-                </form>
-                
+            <div class="content-row">
+                <div class="content-column">
+                    <h3>Input:</h3>
+                    <div id="fizzbuzz-form">
+                        <label>Start number:</label>
+                        <input type="number" id="startnum"/>
+                        <label>End number:</label>
+                        <input type="number" id="endnum"/>
+                        <label>Number to divide by for Fizz:</label>
+                        <input type="number" id="fizznum"/>
+                        <label>Number to divide by for Buzz:</label>
+                        <input type="number" id="buzznum"/>
+                        <button value="Calculate" onclick="fizzbuzz(
+                            document.getElementById('startnum').value,
+                            document.getElementById('endnum').value,
+                            document.getElementById('fizznum').value,
+                            document.getElementById('buzznum').value
+                        );">
+                        Generate
+                        </button>
+                    </div>
+                </div>
+                <div class="content-column">
+                    <h3>Output:</h3>
+                    <div id="fizzbuzz-output-area"></div>
+                </div>
             </div>
-            <div class="content-column">
-                <textarea rows="4" cols="50" id="text-output-area">
-
-                </textarea>
-            </div>
-
         </div>
     </body>
 
